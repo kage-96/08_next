@@ -8,13 +8,13 @@ import { Input } from './_components/Input';
 export default function Page(){
   const url = 'https://1hmfpsvto6.execute-api.ap-northeast-1.amazonaws.com/dev/contacts';
   const [isSubmitting, setIsSubmitting ] = useState<boolean>(false);
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState<string>('')
+  const [email, setEmail] = useState<string>('')
+  const [message, setMessage] = useState<string>('')
 
-  const [nameErrorMessage, setNameErrorMessage] = useState("")
-  const [emailErrorMessage, setEmailErrorMessage] = useState("")
-  const [messageErrorMessage, setMessageErrorMessage] = useState("")
+  const [nameErrorMessage, setNameErrorMessage] = useState<string>("")
+  const [emailErrorMessage, setEmailErrorMessage] = useState<string>("")
+  const [messageErrorMessage, setMessageErrorMessage] = useState<string>("")
 
 
   const checkEmail = (email: string) => {
